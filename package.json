@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.7.0",
-    "commitizen": "^4.3.0",
+    "commitizen": "^4.2.4",
     "commitlint": "^17.7.1",
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",

@@ -29,21 +29,17 @@ module.exports = {
     { value: 'revert', name: '回滚(revert):      回滚到上一个版本' },
     { value: 'ci', name: '持续集成(ci):      持续集成修改' }
   ],
-  scopes: [{}],
   allowCustomScopes: true,
   messages: {
     type: '选择一种你的提交类型:',
-    scope: '选择一个scope (可选):',
-    customScope: '请输入自定义scope:',
+    customScope: '请输入本次提交涉及的模块或范围(可选):',
     subject: '本次提交说明(短说明):',
     body: '本次提交说明(长说明)，使用"|"换行(可选)：',
     breaking: '非兼容性说明 (可选):',
     footer: '关联关闭的issue，例如：#31, #34(可选):',
     confirmCommit: '确定提交说明?(y/n)'
   },
-  subjectLimit: 100,
-  defaultBody: '',
-  defaultIssues: '',
-  defaultScope: '',
-  defaultSubject: ''
+  allowCustomScopes: true,
+  skipQuestions: ['body', 'footer', 'breaking'],
+  subjectLimit: 100
 };
